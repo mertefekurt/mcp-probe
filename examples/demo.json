@@ -1,0 +1,30 @@
+{
+  "name": "demo MCP contract",
+  "server": {
+    "command": ["python3", "../tests/fixtures/demo_server.py"],
+    "cwd": ".",
+    "timeout_seconds": 3
+  },
+  "tests": [
+    {
+      "name": "slugifies a phrase",
+      "tool": "slugify",
+      "arguments": {
+        "text": "Reliable Agent Tools"
+      },
+      "checks": [
+        {
+          "path": "content.0.text",
+          "operator": "equals",
+          "expected": "reliable-agent-tools"
+        },
+        {
+          "path": "structuredContent.slug",
+          "operator": "matches",
+          "expected": "^[a-z-]+$"
+        }
+      ],
+      "max_latency_ms": 500
+    }
+  ]
+}
