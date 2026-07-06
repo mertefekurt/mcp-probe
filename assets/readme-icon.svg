@@ -1,6 +1,6 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MCP Probe icon">
-  <rect width="256" height="256" rx="58" fill="#082f2b"/>
-  <path d="M54 178V78h148v100" stroke="#0f766e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M84 114h88M84 150h58" stroke="#ecfdf5" stroke-width="14" stroke-linecap="round"/>
-  <path d="M55 186h146" stroke="#22c55e" stroke-width="14" stroke-linecap="round"/>
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MCP Probe icon">
+  <rect width="240" height="240" rx="48" fill="#082f2b"/>
+  <path d="M58 74h124v92H58z" fill="none" stroke="#0f766e" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M82 110h72M82 140h44" stroke="#ecfdf5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M58 182h124" stroke="#22c55e" stroke-width="12" stroke-linecap="round"/>
 </svg>

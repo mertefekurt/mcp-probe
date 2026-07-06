@@ -1,35 +1,27 @@
-<p align="center">
-  <img src="assets/readme-cover.svg" alt="MCP Probe cover" width="100%" />
-</p>
-
 # MCP Probe
 
-![stack](https://img.shields.io/badge/stack-Python-be185d?style=flat-square) ![python](https://img.shields.io/badge/python-3.11-4b5563?style=flat-square) ![license](https://img.shields.io/badge/license-MIT-2563eb?style=flat-square) ![ci](https://img.shields.io/badge/ci-GitHub%20Actions-16a34a?style=flat-square)
+Contract testing for stdio MCP servers. In practice it is a narrow guardrail for model evaluation, traces, retrieval, and prompt review: one command, a concrete report, and very little ceremony.
 
-Contract testing for stdio MCP servers.
+![MCP Probe cover](assets/readme-cover.svg)
 
-## Good for
+## Where it fits
 
-- quick local checks around developer tooling
-- small CI jobs where a readable report is enough
-- review workflows that need deterministic output
-- examples based on `examples/demo.json`
+- for model evaluation, traces, retrieval, and prompt review
+- quick local checks without a service dependency
+- review notes that should stay easy to reproduce
 
 ## Run it
 
 ```bash
+git clone https://github.com/mertefekurt/mcp-probe.git
+cd mcp-probe
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -e ".[dev]"
 mcp-probe examples/demo.json
 ```
 
-## Project notes
-
-- Command: `mcp-probe`
-- Language: Python
-- Python: `>=3.11`
-- Tests: `pytest`
-
-## Layout
+## Project map
 
 ```text
 .github/        CI workflow
@@ -38,13 +30,4 @@ src/            package source
 tests/          test coverage
 .gitignore      project file
 pyproject.toml  package metadata
-```
-
-## Check locally
-
-```bash
-python -m pip install -e ".[dev]"
-ruff check .
-pytest
-python -m mcp_probe --help
 ```
